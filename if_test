@@ -1,0 +1,208 @@
+from email.encoders import encode_base64
+from math import *
+from random import *
+
+#eesnimi = input("Какое твоё имя? ").capitalize()
+#if eesnimi == "Juku":
+#    try :
+#        vanus = int(input("Какой твой возраст? "))
+#        if 0 < vanus <= 6 :
+#            print("билет будет стоить 0евро")
+#        elif 6 < vanus <= 14 :
+#            print("Тариф билета детский")
+#        elif 14 < vanus <= 65 :
+#            print("Тариф билета взрослый")
+#        elif 65 < vanus <= 100 :
+#            print("Тариф билета старик")
+#        else:
+#            print("Ты не Правильно ввёл значение")
+#    except :
+#        print("Ты не Правильно ввёл значение")
+#else :
+#    print("Ты не Juku")
+
+#работа с рандомом + choise 
+##import random
+##name_list = ["Artem", "Danik", "Andrey", "Egor", "Ilja", "Anton", "Georg"]
+##element1 = random.choice(name_list)
+##element2 = random.choice(name_list)
+##element3 = random.choice(name_list)
+##element4 = random.choice(name_list)
+##print("Пара номер 1: ", element1, "+", element2)
+##print("Пара номер 1: ", element4, "+", element4)
+
+#shirina = int(input("Какая ширина? "))
+#dlina = int(input("Какая длина? "))
+#s = dlina * dlina
+#try:
+#    shirina = int(input("Какая ширина? "))
+#    dlina = int(input("Какая длина? "))
+#except :
+#    print("Не верный тип данных")
+#s = dlina * shirina
+#round_1 = round (s, 3)
+#print("Площадь комнаты равна:", round_1)
+
+#print()
+
+#try:
+#    hind1 = int(input("Какая цена? "))
+#except :
+#    print("Не верный тип данных")
+
+#print()
+
+#answer1 = input("Вы хотите сделать ремонт? Da/Net ")
+#try:
+#    if answer1 == "Da":
+#     hind = round_1 * hind1
+#     print("Сумма ремонта будет", hind, "евро")
+#    else :
+#     print("Пока!")
+#except :
+#    print("Не верный тип данных!")
+
+
+#try:
+#    hind = int(input("Какая цена?"))
+#except :
+#    print ("Не верный тип данных!")
+
+#try:
+#    if hind >=700:
+#     hind1 = hind / 100 * 30
+#     print("цена :", hind1)
+#    else:
+#     print(hind, "на данный момент цена без скидок!")
+#except :
+#    print ("Не верный тип данных!")
+
+
+#try:
+#    #winter = input("Тепло ли в помещении?")
+#    temp1 = float(input("Какая температура? "))
+#    if temp1 >= 18:
+#        #print("Температура больше 18 градусов! Температура: ", temp1, "Также в помещении: ", winter)
+#        print("Температура больше 18 градусов! Температура: ", temp1)
+#    else:
+#        print("Давай сожгём квартиру холодно!")
+#except :
+#    print("Где то ошибка посмотрите тип как вы указали данные!")
+
+#try:
+#    hight = int(input("Какой твой рост?"))
+#    if 0 < hight <= 60 :
+#        print("ты карлик")
+#    elif  60 < hight <= 150:
+#        print("ты низкий")
+#    elif  150 < hight <= 190:
+#        print("ты высокий")
+#    elif  190 < hight <= 210:
+#        print("ты очень высокий")
+#    else:
+#        print("Такого нету ты скамер")
+#except :
+#    print("Где то ошибка посмотрите тип как вы указали данные!")
+
+#try:
+#    hight = int(input("Какой твой рост? "))
+#    polm = str(input("Какой твой пол? "))
+#    if 0 < hight <= 60 :
+#        print("ты карлик и твой пол ", polm)
+#    elif  60 < hight <= 150:
+#        print("ты низкий и твой пол ", polm)
+#    elif  150 < hight <= 190:
+#        print("ты высокий и твой пол ", polm)
+#    elif  190 < hight <= 210:
+#        print("ты очень высокий и твой пол ", polm)
+#    else:
+#        print("Такого нету ты скамер и твой пол ", polm)
+#except :
+#    print("Где то ошибка посмотрите тип как вы указали данные!")
+
+
+#ошибочный код #from math import *
+###price_hleb = 1.70 
+###price_milk = 1.25
+
+###ans1 = input("Хотите ли вы купить хлеб?")
+###ans2 = input("Хотите ли вы купить молоко?")
+###total = price_hleb + price_milk
+###if ans1 == "Да" :
+###   print("У вас теперь есть хлеб за", price_hleb)
+###elif ans2 == "Да" :
+###    print("У вас теперь есть молоко за", milk)
+###elif ans1 == "Нет" :
+###    print("Вы не купили хлеб")
+###elif ans2 == "Нет" :
+###    print("Вы не купили молокл")
+###else :
+###    print("Того вышло на сумму", total)
+
+
+#try:
+#    s1 = float(input("Введите длину первой стороны квадрата: "))
+#    s2 = float(input("Введите длину второй стороны квадрата: "))
+
+#    if s1 == s2:
+#        print("Это квадрат!")
+#    else:
+#        print("Это не квадрат.")
+#except :
+#    print("Где то ошибка посмотрите тип как вы указали данные!")
+
+#try:
+#    hind = float(input("Sisesta toote hind: (0-999$)"))
+#    v = str(input("Какая валюта? (EUR, USD, RUB)"))
+#    if v not in "EUR" "USD" "RUB":
+#        print("ошибка в валюте")
+#    elif hind < 0:
+#        print("цена ниже 0")
+#    elif hind > 999:
+#        print("Цена высокая!")
+#    elif hind <=10:
+#       soodustus = hind * 0.1
+#    else:
+#        soodustus = hind * 0.2
+#    okonnelik_hind = hind - soodustus
+#    if soodustus > hind:
+#        print("ошибка 1")
+#    elif okonnelik_hind > hind:
+#        print("ошибка 2")
+#    else:
+#        print("ошибок не было")
+#    r = round(okonnelik_hind, 2)
+#    print("Lõplik hind on", r, v)
+#except:
+#      print("Где то ошибка посмотрите тип как вы указали данные!")
+
+
+print("Привет я питон")
+name = input(str("Ваше имя: "))
+print(name, "какое красивое имя вау вау!")
+a = input(name + "Давай узнаем индекс мыссы тела 1 да, 2 нет")
+if a == "1":
+    length = len(name)
+    mass = float(input("Введите вашу массу (в кг): "))
+    if mass > 1000:
+        print("Это не возможно!")
+    i = mass / (0.01 * length) ** 2
+    print(name + "! Индекс вашего тела:", i)
+    if i < 16:
+        print("Недостаточный вес")
+    elif 16 <=i< 19:
+        print("Недостаточно вес")
+    elif 19 <= i < 25:
+        print("Нормально вес")
+    elif 25 <= i < 30:
+        print("Преобладание")
+    elif 30 <= i < 35:
+        print("Ожирение")
+    elif 35 <= i < 40:
+        print("Сильное ожирение")
+    else:
+        print("Ожирение опасно для здоровья")
+else:
+    print("Жалко! Это очень полезная информация!")
+    print()
+print("Увидимся, ", name ,"! Навсегда твой, Питон!")
